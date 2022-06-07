@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--! SEO !-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Page</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="A beautiful weather page" />
+    <meta name="keywords" content="weather, weather page, weather app, time " />
+    <meta name="author" content="ianEdddie" />
+    <meta name="reply-to" content="ianeddie2@gmail.com" />
+    <meta name="robots" content="index,follow" />
+    <!-- x -->
+    <!--! CSS !-->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- x -->
+    <!--! JS !-->
+    <script src="js/main.js" defer></script>
+    <!-- x *-->
+    <!--! Fonts !-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:wght@100&family=Montserrat:wght@100&display=swap");
+    </style>
+    <!-- x -->
+    <!--! Toastify !-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <!-- x -->
+  </head>
+  <!--* BODY *-->
+  <body class="mainBody" id="body">
+    <div class="content">
+      <!--* MAIN *-->
+      <!--? CARD ?-->
+      <main id="main">
+        <!--! Header !-->
+        <header class="header" id="header">
+          <!-- Cloud -->
+          <article class="cont-1">
+            <img
+              src="images/icons/nube.png"
+              alt="Cloud"
+              class="icon"
+              id="icon"
+            />
+            <h3 class="cloud-info" id="cloudInfo"></h3>
+          </article>
+          <!-- Wind -->
+          <article class="cont-2">
+            <img
+              src="images/icons/viento.png"
+              alt="Wind"
+              class="icon"
+              id="icon"
+            />
+            <h3 class="wind-info" id="windInfo"></h3>
+          </article>
+          <!-- Rain -->
+          <article class="cont-3">
+            <img
+              src="images/icons/rain.png"
+              alt="Rain"
+              class="icon"
+              id="icon"
+            />
+            <h3 class="rain-info" id="rainInfo"></h3>
+          </article>
+        </header>
+        <!--! Section 1 !-->
+        <section class="section-1" id="section2">
+          <!-- Temp -->
+          <article class="temp-content">
+            <h1 class="temp" id="temp"></h1>
+          </article>
+          <!-- city -->
+          <article class="city">
+            <h1 id="city"></h1>
+          </article>
+        </section>
+      </main>
+      <!--? x -->
+      <!--* x *-->
+      <!--* SEARCH *-->
+      <section class="form-contain">
+        <form action="" id="form" class="form">
+          <input
+            class="input"
+            id="input"
+            type="text"
+            placeholder="Buscar ciudad"
+          />
+        </form>
+      </section>
+      <!--* x *-->
+    </div>
+  </body>
+</html>
