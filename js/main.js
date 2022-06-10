@@ -17,8 +17,6 @@ const rain = document.getElementById("rainInfo");
 const body = document.getElementById("body");
 // main
 const main = document.getElementById("main");
-// header
-const header = document.getElementById("header");
 
 // - - - - - - - - - - - - //
 
@@ -31,6 +29,12 @@ function submitFuntion(e) {
 // Convert temp
 function toCelsius(kelvin) {
   return Math.round(kelvin - 273.15);
+}
+// Save input value in local storage
+const storage = new Array();
+function saveLocalstorage() {
+  storage.push(input.value);
+  const local = localStorage.setItem("city", JSON.stringify(storage));
 }
 
 // * API *//
@@ -57,6 +61,9 @@ async function search(query) {
     wind.innerHTML = `${data.wind.speed}${"m/s"}`;
     // Rain info
     rain.innerHTML = `${data.main.humidity}${"%"}`;
+    // - - - //
+    // Local Storage
+    saveLocalstorage();
     // Console log
     console.log(data);
     // Body Style Change
