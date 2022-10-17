@@ -13,7 +13,8 @@ Para utilizar la aplicación se deben ejecutar los siguientes comandos en consol
   git clone https://github.com/ianEddie/React-proyectoFinal.git
 ```
 ```bash
-  cd Html-Css-Proyecto-final
+  cd Js-Proyecto-final
+
 
 ```
 ```bash
