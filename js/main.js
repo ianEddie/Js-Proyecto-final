@@ -49,6 +49,7 @@ async function search(query) {
     const response = await fetch(
       `${api.url}?q=${query}&appid=${api.key}&lang=en`
     );
+
     const data = await response.json();
     // City info
     city.innerHTML = `${data.name}, ${data.sys.country}`;
